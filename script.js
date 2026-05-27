@@ -6,8 +6,14 @@ let currentSlide = 0;
 
 /* 🔐 CONFIG */
 const PASSWORD = "moncheri";
-const unlockTime = new Date("2026-06-06T00:00:00").getTime();
 
+/* 🎛️ TEST MODE SWITCH */
+const TEST_MODE = true; // 👈 set false before deploying
+
+const unlockTime = TEST_MODE
+  ? Date.now() - 1000   // ✅ already unlocked for testing
+  : new Date("2026-06-06T00:00:00").getTime();
+  
 /* =========================
    COUNTDOWN TIMER
 ========================= */
