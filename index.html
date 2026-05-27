@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday Mon Chéri ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- 🔐 BIRTHDAY LOCK OVERLAY -->
+  <div class="lock-screen" id="lock-screen">
+
+    <div class="lock-card">
+
+      <h1>🔐 AMARA</h1>
+
+      <p class="sub">Unlocks only on Mon Chéri’s special day ❤️</p>
+
+      <div id="countdown">Loading countdown...</div>
+
+      <input type="password" id="password" placeholder="Enter secret password">
+
+      <button onclick="unlockExperience()">Unlock ✨</button>
+
+    </div>
+
+  </div>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <!-- Intro Screen -->
+  <section class="intro">
+
+    <h1 class="netflix-text">
+      HAPPY BIRTHDAY
+    </h1>
+
+    <p class="intro-subtitle">
+      A Special Message For Mon Chéri ❤️
+    </p>
+
+    <button class="start-btn" onclick="startExperience()">
+      Enter ✨
+    </button>
+
+  </section>
+
+  <!-- Main Content -->
+  <section class="main hidden" id="main-content">
+
+    <!-- Hero -->
+    <div class="hero">
+
+      <img src="images/her.jpg" alt="Her Photo" class="hero-image">
+
+      <h1 class="main-title">
+        Happy Birthday Mon Chéri ❤️
+      </h1>
+
+      <p class="typing-text"></p>
+
+    </div>
+
+    <!-- Message Card -->
+    <div class="message-card">
+
+      <h2>To The Most Beautiful Soul 🌹</h2>
+
+      <p>
+        Happy Birthday to my lovely June,<br><br>
+
+        Thank you for making life brighter,
+        happier, and more meaningful.
+        Every moment with you is special.<br><br>
+
+        May your day be as grand and powerful as the storm clouds rolling over the night sky.<br><br>
+
+        May you always reign supreme,
+        standing high above the world,
+        untouched by time.<br><br>
+
+        I hope your birthday is filled with love,
+        joy, laughter, and unforgettable memories ❤️<br><br>
+
+        I will quote your favorite actor Klaus’ words to Cami:<br><br>
+
+        <span class="quote">
+        "Don't you think for a moment that you've failed me.
+        You stayed my hand.
+        Quelled my rage.
+        You inspired goodness in me...
+        and unlike all of the souls I've encountered and forgotten
+        in the long march of time...
+        I will carry you with me."
+        </span><br><br>
+
+        These words describe your beautiful soul and character, I promise that no matter what I will be your shoulder.<br><br>
+
+        Happy Birthday Mon cœur ❤️❤️❤️
+      </p>
+
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery" id="gallery">
+
+      <img src="images/her3.jpg" class="slide active">
+      <img src="images/her1.jpg" class="slide">
+
+    </div>
+
+  </section>
+
+  <!-- Music -->
+  <audio id="bg-music" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
